@@ -4,8 +4,8 @@ import javafx.application.Application;
 
 public class LaunchClient {
 
-    public static void main(String[] args) {
+    /* public static void main(String[] args) {
         Application.launch(MemoryVue.class,args);
-    }
+    } */
     
 }

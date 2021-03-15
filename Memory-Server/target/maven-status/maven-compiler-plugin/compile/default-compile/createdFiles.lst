@@ -1,1 +1,5 @@
+fr\ensma\a3\ia\memory\server\rest\MultiChatServices.class
+fr\ensma\a3\ia\memory\server\rest\MultiChatServicesApp.class
+fr\ensma\a3\ia\memory\server\websocket\MultiChatServerEndPoint.class
+fr\ensma\a3\ia\memory\server\business\ChatCanalAdmin.class
 fr\ensma\a3\ia\memory\server\websocket\MemoryServerEndPoint.class

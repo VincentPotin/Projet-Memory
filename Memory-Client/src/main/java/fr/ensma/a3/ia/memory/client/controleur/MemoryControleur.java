@@ -2,13 +2,21 @@ package fr.ensma.a3.ia.memory.client.controleur;
 
 
 
+import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Scanner;
 
+import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;
 import javax.websocket.Session;
+import javax.websocket.WebSocketContainer;
+
+import com.google.gson.Gson;
 
 import org.glassfish.tyrus.client.ClientManager;
 
+import fr.ensma.a3.ia.memory.api.messages.joueur.JoueurMessage;
 import fr.ensma.a3.ia.memory.client.JoueurEndPoint;
 import fr.ensma.a3.ia.memory.client.vue.ConnexionVue;
 import fr.ensma.a3.ia.memory.client.vue.HallOfFameVue;
@@ -21,8 +29,10 @@ import javafx.stage.Stage;
 
 public class MemoryControleur implements IConnexionControleur, ISelectionPartieControleur, IPartieControleur, IHallOfFameControleur{
 
-    private static final String SERVER = "ws://localhost:8080/ws/memory";
+    private static final String SERVER = "http://localhost:8080/ws/memory";
 
+    private static Gson gson = new Gson();
+    
     private MemoryVue maVue;
     private ConnexionVue refConnexionVue;
     private SelectionPartieVue refSelPartieVue;
@@ -49,19 +59,34 @@ public class MemoryControleur implements IConnexionControleur, ISelectionPartieC
       newWindow.show();
       ClientManager joueur = ClientManager.createClient();
 			// Connexion au serveur;
+      WebSocketContainer container = ContainerProvider.getWebSocketContainer();
+      Scanner scan = new Scanner(System.in);
+      String blabla = scan.nextLine();
       try {
-        System.out.println("là");
-        Session sess = joueur.connectToServer(JoueurEndPoint.class, URI.create(SERVER+"/"+pseudo));
+        Session sess = joueur.connectToServer(JoueurEndPoint.class, URI.create(SERVER+"/"+pseudo+"/"));
         sess.getUserProperties().put("Pseudo", pseudo);
-       } catch (DeploymentException e) {
+        do {
+          sess.getBasicRemote().sendText(formatMessage(pseudo, blabla));
+        } while(!blabla.equalsIgnoreCase("quit"));
+        //container.connectToServer(JoueurEndPoint.class, new URI("ws://localhost:8080/ws/memory"));
+       } catch (DeploymentException | IOException e) {
         e.printStackTrace();
-       }
+       } finally {
+        scan.close();
+      }
 	  }
 
     @Override
   	public void clickImage() {
         
 	  }
+
+    private static String formatMessage(String pseu, String bla) {
+      JoueurMessage m = new JoueurMessage();
+          m.setSonPseudo(pseu);
+          m.setLeContenu(bla);
+          return gson.toJson(m);
+      }
 
     @Override
   	public void createPartie(String nompartie, Integer nbjoueurs, Integer nbcartes) {

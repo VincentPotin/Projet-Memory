@@ -84,7 +84,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
                 <configuration>
                     <release>11</release>
                 </configuration>
@@ -106,7 +105,7 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>fr.ensma.a3.ia.memory.client.vue.MemoryVue</mainClass>
+                    <mainClass>fr.ensma.a3.ia.memory.client.MyMultiChatClient</mainClass>
                 </configuration>
             </plugin> 
         </plugins>

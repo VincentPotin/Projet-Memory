@@ -7,6 +7,7 @@ C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Pro
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\controleur\IHallOfFameControleur.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\MemoryVue.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\SelectionPartieVue.java
+C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\MultiChatClientEndPoint.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\composants\ScoreJoueurVue.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\controleur\IConnexionControleur.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\ConnexionVue.java
@@ -14,6 +15,7 @@ C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Pro
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\composants\LigneListePartieVue.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\composants\PlateauVue.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\ResultatPartieVue.java
+C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\MyMultiChatClient.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\controleur\MemoryControleur.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\composants\LigneListeJoueurVue.java
 C:\Users\vince\Desktop\ISAE-ENSMA\Option IA\Conception Logiciel\TP\TP_Projet\Projet Memory\Projet-Memory\Memory-Client\src\main\java\fr\ensma\a3\ia\memory\client\vue\HallOfFameVue.java
